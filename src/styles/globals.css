@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+main {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+button {
+    @apply bg-[hsl(0,0%,20%)] text-white font-semibold py-3 tracking-wider w-full px-4 rounded-lg hover:bg-primary-green hover:text-dark-grey;
+    cursor: pointer;
+}
